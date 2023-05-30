@@ -1,8 +1,10 @@
 import Icon from "@/components/icon/Icon";
+import Navigation from "@/components/navigation/Navigation";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen w-full justify-center items-center">
+    <main className="flex flex-col min-h-screen w-full items-center">
+      <Navigation />
       <div className="p-16 text-center">
         <h1 className="py-4 text-8xl font-bold inline-block">
           Turning vision into reality with code.
@@ -14,7 +16,7 @@ export default function Home() {
         </p>
         <a
           href="mailto:ante.petkovic01@gmail.com"
-          className="inline-block rounded-lg px-4 py-2 mt-4 text-lg font-semibold bg-violet-400"
+          className="inline-block rounded-lg px-4 py-2 mt-4 text-lg font-semibold bg-rose-500 hover:bg-transparent border-2 border-rose-500"
         >
           Let&apos;s talk
         </a>

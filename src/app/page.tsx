@@ -1,3 +1,4 @@
+import ExperienceCard from "@/components/cards/ExperienceCard";
 import Icon from "@/components/icon/Icon";
 import TagList from "@/components/tags/TagList";
 
@@ -98,7 +99,53 @@ export default function Home() {
             </>
           </section>
           <section id="experience">
-            <TagList tagNames={["React", "TypeScript"]} />
+            <TagList tags={["React", "TypeScript"]} />
+            <ExperienceCard
+              time="Jan 2023 - present"
+              title="Software Engineer · Evolutio"
+              companyUrl="https://evolutio.hr"
+              description="implementing solution integrations for Infobip. Integrations will be used for customer support, marketing campaigns, B2B, and more. In the process of developmet we are using Infobip's channels for communication, and our job is to connect those channels and clients whose services will be used by the end users."
+              tags={[
+                "TypeScript",
+                "Express.js",
+                "MySQL",
+                "MongoDB",
+                "Nest.js",
+                "React",
+                "Tailwind",
+              ]}
+            />
+            <ExperienceCard
+              time="Jan 2022 - Jan 2023"
+              title="Web Developer · Caelor"
+              companyUrl="https://caelor.com/"
+              description="Developing highly engaging, innovative, and user-friendly Jira and Confluence apps"
+              tags={[
+                "JavaScript",
+                "Express.js",
+                "MySQL",
+                "React",
+                "Handlebars",
+                "styled-components",
+                "Atlaskit",
+              ]}
+            />
+            <ExperienceCard
+              time="Dec 2020 - Jan 2022"
+              title="Web Developer · venITure"
+              companyUrl="https://veniture.net/en"
+              description="Developing highly engaging, innovative, and user-friendly Jira and Confluence apps"
+              tags={[
+                "JavaScript",
+                "Express.js",
+                "MySQL",
+                "React",
+                "Handlebars",
+                "SCSS",
+                "styled-components",
+                "Atlaskit",
+              ]}
+            />
           </section>
         </main>
       </div>

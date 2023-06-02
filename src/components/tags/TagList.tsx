@@ -1,12 +1,12 @@
 import { TagListProps } from "@/types/tags";
 import Tag from "./Tag";
 
-export default function TagList({ tagNames }: TagListProps) {
+export default function TagList({ tags }: TagListProps) {
   return (
     <ul className="flex flex-wrap">
-      {tagNames.map((tagName) => (
-        <li key={tagName} className="mr-2 mt-2">
-          <Tag name={tagName} />
+      {tags.map((tag) => (
+        <li key={tag} className="mr-2 mt-2">
+          <Tag name={tag} />
         </li>
       ))}
     </ul>

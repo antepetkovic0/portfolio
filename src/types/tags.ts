@@ -3,5 +3,5 @@ export interface TagProps {
 }
 
 export interface TagListProps {
-  tagNames: string[];
+  tags: string[];
 }

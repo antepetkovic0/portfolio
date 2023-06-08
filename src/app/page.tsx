@@ -1,6 +1,7 @@
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import Icon from "@/components/icon/Icon";
 import TagList from "@/components/tags/TagList";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -75,6 +76,15 @@ export default function Home() {
               </a>
             </li>
           </ul>
+          <div>
+            <a
+              href=""
+              className="flex gap-1 text-slate-200 w-fit px-2 py-1 border-2 border-teal-300"
+            >
+              <Icon name="file-download" />
+              <span>Resume</span>
+            </a>
+          </div>
         </header>
         <main className="lg:w-1/2 min-h-[2000px]">
           <section id="about">
@@ -98,54 +108,61 @@ export default function Home() {
               </p>
             </>
           </section>
-          <section id="experience">
-            <TagList tags={["React", "TypeScript"]} />
-            <ExperienceCard
-              time="Jan 2023 - present"
-              title="Software Engineer · Evolutio"
-              companyUrl="https://evolutio.hr"
-              description="implementing solution integrations for Infobip. Integrations will be used for customer support, marketing campaigns, B2B, and more. In the process of developmet we are using Infobip's channels for communication, and our job is to connect those channels and clients whose services will be used by the end users."
-              tags={[
-                "TypeScript",
-                "Express.js",
-                "MySQL",
-                "MongoDB",
-                "Nest.js",
-                "React",
-                "Tailwind",
-              ]}
-            />
-            <ExperienceCard
-              time="Jan 2022 - Jan 2023"
-              title="Web Developer · Caelor"
-              companyUrl="https://caelor.com/"
-              description="Developing highly engaging, innovative, and user-friendly Jira and Confluence apps"
-              tags={[
-                "JavaScript",
-                "Express.js",
-                "MySQL",
-                "React",
-                "Handlebars",
-                "styled-components",
-                "Atlaskit",
-              ]}
-            />
-            <ExperienceCard
-              time="Dec 2020 - Jan 2022"
-              title="Web Developer · venITure"
-              companyUrl="https://veniture.net/en"
-              description="Developing highly engaging, innovative, and user-friendly Jira and Confluence apps"
-              tags={[
-                "JavaScript",
-                "Express.js",
-                "MySQL",
-                "React",
-                "Handlebars",
-                "SCSS",
-                "styled-components",
-                "Atlaskit",
-              ]}
-            />
+          <section id="experience" className="mt-24">
+            <ol className="group/list">
+              <li className="mb-16">
+                <ExperienceCard
+                  time="Jan 2023 - present"
+                  title="Software Engineer · Evolutio"
+                  companyUrl="https://evolutio.hr"
+                  description="implementing solution integrations for Infobip. Integrations will be used for customer support, marketing campaigns, B2B, and more. In the process of developmet we are using Infobip's channels for communication, and our job is to connect those channels and clients whose services will be used by the end users."
+                  tags={[
+                    "TypeScript",
+                    "Express.js",
+                    "MySQL",
+                    "MongoDB",
+                    "Nest.js",
+                    "React",
+                    "Tailwind",
+                  ]}
+                />
+              </li>
+              <li className="mb-16">
+                <ExperienceCard
+                  time="Jan 2022 - Jan 2023"
+                  title="Web Developer · Caelor"
+                  companyUrl="https://caelor.com"
+                  description="Developing highly engaging, innovative, and user-friendly Jira and Confluence apps"
+                  tags={[
+                    "JavaScript",
+                    "Express.js",
+                    "MySQL",
+                    "React",
+                    "Handlebars",
+                    "styled-components",
+                    "Atlaskit",
+                  ]}
+                />
+              </li>
+              <li className="mb-16">
+                <ExperienceCard
+                  time="Dec 2020 - Jan 2022"
+                  title="Web Developer · venITure"
+                  companyUrl="https://veniture.net/en"
+                  description="Developing highly engaging, innovative, and user-friendly Jira and Confluence apps"
+                  tags={[
+                    "JavaScript",
+                    "Express.js",
+                    "MySQL",
+                    "React",
+                    "Handlebars",
+                    "SCSS",
+                    "styled-components",
+                    "Atlaskit",
+                  ]}
+                />
+              </li>
+            </ol>
           </section>
         </main>
       </div>

@@ -11,14 +11,14 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <BaseCard>
-      <div className="text-slate-400 font-semibold text-xs uppercase tracking-wide sm:col-span-2">
+      <div className="z-10 text-slate-400 font-semibold text-xs uppercase tracking-wide sm:col-span-2 mt-1">
         {time}
       </div>
-      <div className="sm:col-span-6">
+      <div className="z-10 sm:col-span-6">
         <h3 className="text-slate-200">
           <a href={companyUrl}>{title}</a>
         </h3>
-        <p>{description}</p>
+        <p className="text-sm">{description}</p>
         <TagList tags={tags} />
       </div>
     </BaseCard>

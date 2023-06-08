@@ -94,17 +94,24 @@ export default function Home() {
               </h2>
             </div> */}
             <>
+              <p className="mb-4">
+                Enthusiastic and passionate little boy in modern and advanced
+                web technologies, with a particular focus on the JavaScript
+                stack. I strive to stay up to date with the latest trends and
+                best practices in the JavaScript ecosystem to ensure that my
+                projects are always built on solid foundations.
+              </p>
+              <p className="mb-4">
+                While my main expertise lies in web development, I&apos;m also
+                waiting for the stars to align to venture into the realm of
+                mobile development, especially React Native. The thought of
+                creating mobile and web applications that share the majority of
+                their business logic thrills me up.
+              </p>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                Beyond the world of coding, I find solace and joy in spending
+                quality time with my loved ones and activities that invigorate
+                my body and mind. Saxophone, wait for me!.
               </p>
             </>
           </section>

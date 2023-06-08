@@ -1,26 +1,31 @@
+"use client";
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import Icon from "@/components/icon/Icon";
 import TagList from "@/components/tags/TagList";
 import Link from "next/link";
+import React from "react";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-screen-xl px-6 md:px-12 lg:px-24">
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <header className="lg:sticky lg:top-0 lg:w-1/2">
+        <header className="py-24 lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2">
           <>
-            <h1 className="text-4xl text-slate-200 font-bold">Ante Petkovic</h1>
+            <h1 className="text-4xl text-slate-200 font-bold tracking-tight">
+              Ante Petkovic
+            </h1>
             <h2 className="text-lg text-slate-200 font-medium mt-2">
               Software engineer @ Evolutio
             </h2>
             <p className="mt-2">Love turning vision into reality with code</p>
             <nav className="nav hidden lg:block">
-              <ul className="mt-16 w-max">
+              <ul className="mt-12 w-max">
                 <li>
                   <a
                     className="group flex items-center py-3 active"
                     href="#about"
                   >
+                    <span className="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                     <span className="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                       About
                     </span>
@@ -28,27 +33,27 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="group flex items-center py-3 "
+                    className="group flex items-center py-3"
                     href="#experience"
                   >
-                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                    <span className="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                       Experience
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="group flex items-center py-3 " href="#projects">
-                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                  <a className="group flex items-center py-3" href="#projects">
+                    <span className="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                       Projects
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="group flex items-center py-3 " href="#articles">
-                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                  <a className="group flex items-center py-3" href="#articles">
+                    <span className="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                       Articles
                     </span>
                   </a>
@@ -56,7 +61,12 @@ export default function Home() {
               </ul>
             </nav>
           </>
-          <ul className="mt-8 flex gap-4">
+          <ul className="mt-12 flex gap-6">
+            <li>
+              <a href="mailto:ante.petkovic01@gmail.com">
+                <Icon name="email" />
+              </a>
+            </li>
             <li>
               <a
                 href="https://github.com/antepetkovic0"
@@ -75,24 +85,27 @@ export default function Home() {
                 <Icon name="linkedin" />
               </a>
             </li>
+
+            <li>
+              <a
+                href="mailto:ante.petkovic01@gmail.com"
+                className="group flex gap-1.5 items-center"
+              >
+                <Icon name="file" />
+                <span className="text-sm group-hover:text-slate-200 tracking-wider">
+                  Check resume
+                </span>
+              </a>
+            </li>
           </ul>
-          <div>
-            <a
-              href=""
-              className="flex gap-1 text-slate-200 w-fit px-2 py-1 border-2 border-teal-300"
-            >
-              <Icon name="file-download" />
-              <span>Resume</span>
-            </a>
-          </div>
         </header>
-        <main className="lg:w-1/2 min-h-[2000px]">
-          <section id="about">
-            {/* <div className="sticky top-0 z-10 bg-slate-900 w-screen">
-              <h2 className="p-4 font-bold uppercase text-sm tracking-widest text-slate-200">
+        <main className="pt-24 lg:w-1/2 lg:py-24">
+          <section id="about" className="mb-16 scroll-mt-16">
+            <div className="sticky lg:relative lg:opacity-0 top-0 z-10 bg-slate-900/75 backdrop-blur -mx-6 md:-mx-12 lg:mx-auto p-6 w-screen">
+              <h2 className="font-bold uppercase text-sm tracking-widest text-slate-200 lg:sr-only">
                 {"// About"}
               </h2>
-            </div> */}
+            </div>
             <>
               <p className="mb-4">
                 Enthusiastic and passionate little boy in modern and advanced
@@ -111,7 +124,7 @@ export default function Home() {
               <p>
                 Beyond the world of coding, I find solace and joy in spending
                 quality time with my loved ones and activities that invigorate
-                my body and mind. Saxophone, wait for me!.
+                my body and mind. Saxophone, wait for me!
               </p>
             </>
           </section>

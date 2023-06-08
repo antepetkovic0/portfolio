@@ -16,7 +16,9 @@ export default function ExperienceCard({
       </div>
       <div className="z-10 sm:col-span-6">
         <h3 className="text-slate-200">
-          <a href={companyUrl}>{title}</a>
+          <a href={companyUrl} target="__blank" rel="noopener noreferrer">
+            {title}
+          </a>
         </h3>
         <p className="text-sm">{description}</p>
         <TagList tags={tags} />

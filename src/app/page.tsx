@@ -1,5 +1,6 @@
 "use client";
 import ExperienceCard from "@/components/cards/ExperienceCard";
+import ProjectCard from "@/components/cards/ProjectCard";
 import Icon from "@/components/icon/Icon";
 import TagList from "@/components/tags/TagList";
 import Link from "next/link";
@@ -101,7 +102,7 @@ export default function Home() {
         </header>
         <main className="pt-24 lg:w-1/2 lg:py-24">
           <section id="about" className="mb-16 scroll-mt-16">
-            <div className="sticky lg:relative lg:opacity-0 top-0 z-10 bg-slate-900/75 backdrop-blur -mx-6 md:-mx-12 lg:mx-auto p-6 w-screen">
+            <div className="sticky lg:relative lg:opacity-0 top-0 z-10 bg-slate-900/75 backdrop-blur -mx-6 md:-mx-12 lg:mx-auto p-6 lg:p-0 w-screen">
               <h2 className="font-bold uppercase text-sm tracking-widest text-slate-200 lg:sr-only">
                 {"// About"}
               </h2>
@@ -180,6 +181,17 @@ export default function Home() {
                     "styled-components",
                     "Atlaskit",
                   ]}
+                />
+              </li>
+            </ol>
+          </section>
+          <section id="projects" className="mt-24">
+            <ol className="group/list">
+              <li className="mb-16">
+                <ProjectCard
+                  title="Battleship"
+                  description="Windows Forms Battleship game built with Akka.NET. Final project built for the college distributed systems course."
+                  imageUrl="/images/battleship.jpg"
                 />
               </li>
             </ol>

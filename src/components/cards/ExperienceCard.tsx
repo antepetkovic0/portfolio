@@ -11,7 +11,7 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <BaseCard>
-      <div className="z-10 text-slate-400 font-semibold text-xs uppercase tracking-wide sm:col-span-2 mt-1">
+      <div className="z-10 text-slate-400 font-semibold text-xs uppercase tracking-wide sm:col-span-2 mt-1 mr-2">
         {time}
       </div>
       <div className="z-10 sm:col-span-6">

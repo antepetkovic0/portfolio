@@ -1,4 +1,5 @@
 "use client";
+import CertificateCard from "@/components/cards/CertificateCard";
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import ProjectCard from "@/components/cards/ProjectCard";
 import Icon from "@/components/icon/Icon";
@@ -55,7 +56,7 @@ export default function Home() {
                   <a className="group flex items-center py-3" href="#articles">
                     <span className="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                     <span className="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                      Articles
+                      Shelf
                     </span>
                   </a>
                 </li>
@@ -89,7 +90,7 @@ export default function Home() {
 
             <li>
               <a
-                href="mailto:ante.petkovic01@gmail.com"
+                href="react-fundamentals.pdf"
                 className="group flex gap-1.5 items-center"
               >
                 <Icon name="file" />
@@ -102,7 +103,7 @@ export default function Home() {
         </header>
         <main className="pt-24 lg:w-1/2 lg:py-24">
           <section id="about" className="mb-16 scroll-mt-16">
-            <div className="sticky lg:relative lg:opacity-0 top-0 z-10 bg-slate-900/75 backdrop-blur -mx-6 md:-mx-12 lg:mx-auto p-6 lg:p-0 w-screen">
+            <div className="sticky lg:relative lg:opacity-0 top-0 z-10 bg-slate-900/75 backdrop-blur -mx-6 md:-mx-12 lg:mx-auto p-6 lg:p-0">
               <h2 className="font-bold uppercase text-sm tracking-widest text-slate-200 lg:sr-only">
                 {"// About"}
               </h2>
@@ -136,13 +137,13 @@ export default function Home() {
                   time="Jan 2023 - present"
                   title="Software Engineer · Evolutio"
                   companyUrl="https://evolutio.hr"
-                  description="implementing solution integrations for Infobip. Integrations will be used for customer support, marketing campaigns, B2B, and more. In the process of developmet we are using Infobip's channels for communication, and our job is to connect those channels and clients whose services will be used by the end users."
+                  description="Implementing solution integrations for Infobip. Integrations are used for customer support, marketing campaigns, B2B, and more. In the process of developmet we are using Infobip's channels for communication, and our job is to connect those channels and clients whose services will be used by the end users."
                   tags={[
                     "TypeScript",
                     "Express.js",
+                    "Nest.js",
                     "MySQL",
                     "MongoDB",
-                    "Nest.js",
                     "React",
                     "Tailwind",
                   ]}
@@ -157,9 +158,7 @@ export default function Home() {
                   tags={[
                     "JavaScript",
                     "Express.js",
-                    "MySQL",
                     "React",
-                    "Handlebars",
                     "styled-components",
                     "Atlaskit",
                   ]}
@@ -174,11 +173,8 @@ export default function Home() {
                   tags={[
                     "JavaScript",
                     "Express.js",
-                    "MySQL",
                     "React",
-                    "Handlebars",
                     "SCSS",
-                    "styled-components",
                     "Atlaskit",
                   ]}
                 />
@@ -192,6 +188,18 @@ export default function Home() {
                   title="Battleship"
                   description="Windows Forms Battleship game built with Akka.NET. Final project built for the college distributed systems course."
                   imageUrl="/images/battleship.jpg"
+                />
+              </li>
+            </ol>
+          </section>
+          <section id="shelf" className="mt-24">
+            <ol className="group/list">
+              <li className="mb-16">
+                <CertificateCard
+                  title="React Fundamentals"
+                  description="by Kent C. Dodds"
+                  imageUrl="/images/react-fundamentals-certificate.jpg"
+                  pdfUrl="/react-fundamentals.pdf"
                 />
               </li>
             </ol>

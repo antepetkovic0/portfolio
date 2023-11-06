@@ -11,3 +11,10 @@ export interface ProjectCardProps {
   description: string;
   imageUrl: string;
 }
+
+export interface CertificateCardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  pdfUrl: string;
+}
